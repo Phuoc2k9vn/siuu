@@ -1,0 +1,14 @@
+pas:	C:\TP60\turbo !.!
+bas:	c:\qbasic\qbasic !.!
+asm:	asm !.!
+inc:	asm !.!
+zip:    zipview !.!
+lzh:    zipview !.!
+lha:    zipview !.!
+arj:    zipview !.!
+pak:    zipview !.!
+sdn:    zipview !.!
+pcx:    pcxview !.!
+wp5:    wpview !.!
+btm:    !
+*:	Rem No run file for this extension!!
