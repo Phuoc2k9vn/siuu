@@ -1,0 +1,69 @@
+
+                               The DOS Controller
+                              --------------------
+
+          DC is an optimized version of The Norton Commander, in that it's
+        faster and uses less RAM. Since I wrote DC for my own needs, this
+        documentation is none too thorough, but if you have some experience
+        of NC you will encounter no problems - all commands, bar one or two
+        exceptions, remain the same.
+          The Mail, Link and quick View facilities found in NC have been left
+        out of DC, as I've never had any use for them. On the other hand, some
+        things have been much enhanced. The internal editor, for example, can
+        now be used for more than fiddling with your autoexec.bat. - Also, the
+        coding errors I've found in NC have not been implemented in DC.
+
+        Some important differences between NC and DC:
+
+           DC uses considerably less RAM:
+
+                Semi-resident:          DC : about  5k(!)
+                                        NC : about 13k(?)
+
+                Fully resident:         DC : about  49k(!)
+                                        NC : about 174k(??)
+
+                Add 3 or 4k to these figures for the command interpreter.
+
+                  DC lets you shift from semi- to fully resident status
+                from a menu, while NC demands that you launch another
+                program altogether. Moreover, the reduced code in DC
+                means that the program, when not fully resident, will
+                return from DOS more quickly.
+
+           Everything runs faster in DC.
+
+           The View feature, too, has been removed, since the internal
+            editor can now handle files as big as your free memory will
+            allow - typically  over 500k. Instead, as in DOS, F3 now
+            activates the History command. Thus F3+Return will repeat
+            the last command, just as it will in DOS.
+
+           The DC editor supports block commands (press Alt).
+
+           Directory trees are alphabetically arranged, so that you can
+            find your way around more easily.
+
+           DC asks you for confirmation only once when deleting several
+            files. Delete can also work recursively, but will then ask you
+            to confirm the operation one more time.
+
+           Link, Mail and quick View are not found in DC.
+
+          DC supports a mouse as long as the following functions under
+          Microsoft mouse interrupt 33h are available:
+
+          00h,01h,02h,08h,0Ah,0Ch,0Fh
+
+        Also, function 21h is called when Quick mouse reset is chosen,
+        - which it shouldn't be, unless it has an effect.
+
+          DC was coded in 100% assembly language for maximum speed and re-
+        liability and minimal RAM use. Thus, the program is not infested
+        with BASIC, C or other such toy stuff.
+
+          The chance of DC.COM carrying a virus is negligible, as the
+        program checks its own size and code on startup. Note: this
+        also means that the executable will not run if compressed.
+
+                                                                S›ren Kragh

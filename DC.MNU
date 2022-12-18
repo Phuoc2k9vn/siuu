@@ -1,0 +1,15 @@
+F: Report free memory
+	mem
+
+C: Check current disk
+	chkdsk
+	pause
+
+D: DOS Shell
+	command
+
+P: Park harddisk
+	park
+
+' This is a comment. Any line that starts with
+' a single quote is a comment line, and is ignored.
